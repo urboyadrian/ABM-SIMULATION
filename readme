@@ -1,1 +1,57 @@
+Epidemic Simulation – SIR/SEIR/SIRS/SEIRS Models
 
+Overview
+This project simulates the spread of an infectious disease using four classic compartmental models in epidemiology: SIR, SEIR, SIRS, and SEIRS. It combines an agent-based approach with a graphical user interface (GUI) built using Tkinter, and provides both animated and static graphical outputs illustrating the dynamics of the disease over time.
+
+The simulation visualizes two key outputs:
+
+A spatial agent-based animation showing individuals moving and interacting on a 2D grid.
+
+A time-based graph showing the evolution of each compartment (Susceptible, Exposed, Infected, Recovered) across the simulation days.
+
+Models
+SIR: Susceptible → Infected → Recovered
+
+SEIR: Susceptible → Exposed → Infected → Recovered
+
+SIRS: Adds immunity loss after recovery
+
+SEIRS: Combines incubation period and immunity loss
+
+Each model is governed by parameters like transmission rate, recovery rate, incubation rate, susceptibility rate, and more.
+
+
+How to Use :
+Launch the program by running the Python script.
+
+Use the GUI to:
+1) Select the epidemiological model (SIR, SEIR, SIRS, SEIRS)
+
+2) Modify simulation parameters such as:
+
+Population size
+
+Grid size
+
+Infection radius
+
+Transmission rate (β)
+
+Recovery rate (γ)
+
+Incubation rate (σ) – for SEIR/SEIRS
+
+Susceptibility rate (δ) – for SIRS/SEIRS
+
+Number of time steps (days)
+
+3) Run the simulation by clicking the "Run Simulation" button.
+
+
+The program will:
+
+Save two GIFs (agent-based and curve-based animations)
+
+Save two static PNG images as snapshots
+
+Open both animations automatically (and reposition the windows if possible)
